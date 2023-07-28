@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        <Sidebar />
+        <SideBar />
         <div class="content">
             <div class="mt-4"
                 style="background-color: #f8fafb; height: 80px !important; width: 95%; margin-left: 2rem !important; border-radius: 1rem;">
@@ -120,12 +120,14 @@
 import ModalComponent from './ModalComponent.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
+import SideBar from './SideBar.vue';
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 const API_URL = 'http://localhost:8080';
 
 export default {
     components: {
+        SideBar,
         Form,
         Field,
         ErrorMessage,

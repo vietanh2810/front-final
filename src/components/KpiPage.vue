@@ -1,13 +1,13 @@
 <template>
     <div class="dashboard">
+        <SideBar />
         <div class="content">
             <div class="mt-4" style="
             background-color: #f8fafb;
             height: 80px !important;
             width: 100%;
             margin-left: 2rem !important;
-            border-radius: 1rem;
-          ">
+            border-radius: 1rem;">
                 <label style="margin: 1.5rem 0 0 2rem; font-size: 21px; font-weight: 500">Kpis</label>
                 <!-- <button><i class="bi bi-2-square"></i>Nouveau Kpi</button> -->
                 <ModalComponent>
@@ -196,11 +196,13 @@ import EventService from "../services/events.service";
 import TagService from "../services/tag.service";
 import * as yup from "yup";
 import ModalComponent from './ModalComponent.vue';
+import SideBar from './SideBar.vue';
 const API_URL = 'http://localhost:8080';
 
 export default {
     components: {
         Form,
+        SideBar,
         Field,
         ErrorMessage,
         ModalComponent

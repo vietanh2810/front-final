@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        <Sidebar />
+        <SideBar />
         <div class="content">
             <div class="mt-4" style="
             background-color: #f8fafb;
@@ -165,10 +165,12 @@ import "bootstrap";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import ModalComponent from './ModalComponent.vue';
+import SideBar from './SideBar.vue';
 const API_URL = 'http://localhost:8080';
 
 export default {
     components: {
+        SideBar,
         Form,
         Field,
         ErrorMessage,

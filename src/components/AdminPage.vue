@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        <Sidebar />
+        <SideBar />
         <div class="content">
             <div class="mt-4"
                 style="background-color: #f8fafb; height: 80px !important; width: 95%; margin-left: 2rem !important; border-radius: 1rem;">
@@ -168,12 +168,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import UserService from "../services/user.service";
 import VuePdfEmbed from 'vue-pdf-embed'
+import SideBar from "../components/SideBar.vue";
 const API_URL = 'http://localhost:8080';
 
 
 export default {
     components: {
         VuePdfEmbed,
+        SideBar
     },
     data() {
         return {

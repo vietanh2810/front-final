@@ -1,6 +1,6 @@
 <template>
     <div class="sdk">
-        <Sidebar />
+        <SideBar />
         <div class="content">
             <div class="mt-4"
                 style="background-color: #f8fafb; height: 80px !important; width: 95%; margin-left: 2rem !important; border-radius: 1rem;">
@@ -351,8 +351,12 @@ export default vueTracker;
 <script>
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
+import SideBar from './components/SideBar.vue';
 
 export default {
+    components: {
+        SideBar,
+    },
     data() {
         return {
             showFullCode: false,

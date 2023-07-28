@@ -1,6 +1,6 @@
 <template>
     <div class="dashboard">
-        <Sidebar />
+        <SideBar />
         <div class="content">
             <div class="mt-4"
                 style="background-color: #f8fafb; height: 80px !important; width: 100%; margin-left: 2rem !important; border-radius: 1rem;">
@@ -99,6 +99,7 @@ import LineChart from './CustomLineChart.vue';
 import KpiChart from './KpiChart.vue';
 import HeatMapChart from "./HeatMapChart.vue";
 import 'bootstrap/dist/css/bootstrap.css';
+import SideBar from './SideBar.vue';
 import 'bootstrap';
 import DashboardService from '../services/dashboard.service';
 
@@ -107,6 +108,7 @@ export default {
         LineChart,
         KpiChart,
         HeatMapChart,
+        SideBar,
     },
     data() {
         return {
