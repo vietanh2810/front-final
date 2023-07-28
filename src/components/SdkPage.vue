@@ -351,7 +351,7 @@ export default vueTracker;
 <script>
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
-import SideBar from './components/SideBar.vue';
+import SideBar from './SideBar.vue';
 
 export default {
     components: {
