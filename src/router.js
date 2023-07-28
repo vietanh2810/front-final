@@ -12,6 +12,10 @@ import ConversionTunnel from "./components/ConversionTunnel.vue";
 
 const routes = [
     {
+        path: "/",
+        component: DashBoard,
+    },
+    {
         path: "/login",
         component: LoginPage,
     },
